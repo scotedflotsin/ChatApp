@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --appBg: #eff6fc;
+  --sidebarColor: #6e00ff;
+  --selectedTab: #f3b559;
+  --componentsShadow: #79c6ef9c;
+  --indecatorColor: #f24e1e;
+  --nomalTextColor: #303030;
+  --subTextColor: #7c7c7c;
+  --messageBarColor: #eff6fc;
+  --menuHover: #612dd1;
+  --senderColor: #e7e7e7;
+}
+
+.voilet {
+  background-color: #6e00ff;
+}
+
+/* On menu hover */
+
+.onMenuHover:hover {
+  transition: 0.2s;
+  cursor: pointer;
+  background-color: var(--menuHover);
+  border-right: 7px solid var(--selectedTab);
+}
+
+.profileRing:hover {
+  border: 2px solid var(--selectedTab);
+  transition: all 0.1s ease;
+  cursor: pointer;
+}
+
+/* Roboto font */
+
+.roboto-head {
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 5%;
+  color: #303030;
+}
+
+.roboto-sub {
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 5%;
+  color: #303030;
+}
+.line-height {
+  line-height: 0;
+}
+.indicator-color {
+  background-color: #f24e1e;
+}
+
+/* hide scrool bar */
+
+/* Add this custom CSS */
+/* Hide the scrollbar in all browsers */
+.custom-scrollbar {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  display: none; /* WebKit (Chrome, Safari) */
+}
+
+.search-bar-shadow {
+  box-shadow: 0px 2px 5px 1px var(--componentsShadow);
+}
+.reciver {
+  background-color: var(--senderColor);
+  border-radius: 15px;
+  padding: 7px 15px;
+  font-size: 18px;
+}
+
+.sender {
+  background-color: var(--sidebarColor);
+  color: white;
+  border-radius: 15px;
+  padding: 7px 15px;
+  font-size: 18px;
+}
+
+.RevIndicatorColor {
+  background-color: var(--senderColor);
+}
+.SenIndicatorColor {
+  background-color: var(--sidebarColor);
+}
+
+.input[invalid]:focus {
+  mask-image: linear-gradient(
+    to bottom,
+    transparent,
+    transparent 90%,
+    white 100%
+  );
+}
